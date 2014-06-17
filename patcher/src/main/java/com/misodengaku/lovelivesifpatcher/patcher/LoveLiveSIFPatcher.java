@@ -17,7 +17,7 @@ public class LoveLiveSIFPatcher implements IXposedHookLoadPackage{
             return;
 
         findAndHookMethod("klb.android.GameEngine.GameEngineActivity", lpparam.classLoader, "isSuBinaryPresent",  XC_MethodReplacement.returnConstant(false));
-        XposedBridge.log("LoveLiveSIFPatcher Inited.");
+        XposedBridge.log("isSuBinaryPresent hooked.");
     }
 
 }
