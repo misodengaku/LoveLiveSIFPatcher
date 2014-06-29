@@ -9,7 +9,7 @@ import static de.robv.android.xposed.XposedHelpers.findAndHookMethod;
 
 public class LoveLiveSIFPatcher implements IXposedHookLoadPackage{
 
-	private static final String PACKAGE_ESF = "klb.android.lovelive";
+    private static final String PACKAGE_ESF = "klb.android.lovelive";
 
 
     public void handleLoadPackage(XC_LoadPackage.LoadPackageParam lpparam) throws Throwable {
